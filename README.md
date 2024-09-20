@@ -14,7 +14,7 @@ Bogus sort is a sorting algorithm that takes inspiration from Bogo Sort where it
 6) Repeat from step 2 until we reach the end of the array
 
 # Implementation
-The original implementation of the code was in Java and can be found in the Bogus_Sort.Java file. There were some design choices such as a one line isSorted method. This removes the need to iterate through the whole list and checks adjacent elements if the array is past the first index. To handle out of bounds errors, the logic has to be a little backwards to terminate the line early if the current index is at zero.
+The original implementation of the code was in Java and can be found in the Bogus_Sort.Java file. There were some good design choices and benefits in Java such as a one line isSorted method. This removes the need to iterate through the whole list and checks adjacent elements if the array is past the first index. To handle out of bounds errors, the logic has to be a little backwards to terminate the line early if the current index is at zero.
 
 The genRandIndex method checks if the current index was reset, and if so, it clears all used indices. Then is makes use of a do while to keep generating random indices until a new one is found. Once it is found, it stores it and returns it.
 
